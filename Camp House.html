@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BlackWhite.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Krona+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="estilo.css">
+    <title>Camp House - Mobilia</title>
+    <style>
+
+     .text{
+     background-color: rgba(105, 99, 99, 0.178);
+     font-family : 'Dancing Script', cursive;
+    }
+     #inicio{
+     min-width: 372px;
+    }
+     #dog{
+     width: 1350px;
+     height: 500px;
+     }
+    
+     #cabecalho ul{ 
+     margin: 0;
+     background-color: rgba(29, 13, 13, 0.555);
+     list-style: none;
+    }
+
+     #cabecalho ul li{
+     display: inline;
+    }
+     #cabecalho ul li a{
+     color: white;
+     padding: 10px 30px;
+     display: inline-block;
+     text-decoration: none;
+     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    
+     #cabecalho ul li a:hover{
+     color: rgb(54, 35, 35);
+    }
+
+    .slider{
+        width:100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .slider ul{
+        display: flex;
+        padding: 0;
+        width: 350%;
+        animation: cambio 12s infinite;
+    }
+
+    .slider li{
+        width: 100%;
+        list-style: none;
+    }
+
+    .slider #imagens{
+        width: 100%;
+    }
+
+    @keyframes cambio{
+        0% {margin-left: 0%;}
+        20% {margin-left: 0%;}
+
+        25% {margin-left: -120%;}
+        45% {margin-left: -120%;}
+
+        50% {margin-left: -240%;}
+        70% {margin-left: -240%;}
+    } 
+
+    #imagens{
+        width: 200px;
+        height: 450px;
+        margin: 20px;
+    }
+
+    .looga{
+        width:60px;
+        height:60px;
+        margin: 0.5px;
+    }
+    #orcamento{
+        color: red;
+        font-family: 'Prompt', sans-serif;
+        
+    }
+   #orc{
+    background-color:inherit;
+        border: black;
+        width: 300px;
+        height:300px;
+        margin:20px;
+   }
+   .pPrincipal{
+    font-family: 'Itim', cursive;
+   }
+   
+   
+   form{
+    margin-left: 50px;
+   }
+
+   #fb, #insta, #gmail {
+       height: 25px;
+       width: 25px;
+   }
+   div.box{
+       height: 100px;
+       width:  380px;
+	   display: inline-block;
+       text-align: center;
+       margin-left: 30px;
+       
+    }
+    .produtosiniciais{
+        width:  350px;
+        height: 300px;
+    }
+   
+   span{
+       margin-left: 20px;
+   }
+   .titulo, button{
+    font-family: 'Itim', cursive;
+    font-family: 'Krona One', sans-serif;
+   }
+
+   footer{
+      background:rgba(105, 99, 99, 0.164)
+   }
+   .colorir{
+    width: 300px;
+    ;
+    background-color: rgba(145, 145, 233, 0.781);
+   }
+   .colorfundo{
+       background-color: rgba(224, 8, 141, 0.651);
+       height: 700px;
+   }
+    </style>
+
+</head>
+
+
+<body>
+    
+<center><h1 class="text"><img src="logo camph.png"class="looga">CAMP HOUSE</h1>
+
+    <div>
+        <header id="cabecalho">
+           <ul>
+             <li id="produt"><a href="pagProdutos.html" target="blank">Produtos</a></li>
+             <li id="orcamentoo"><a href="pagOrcamento.html" target="_blank">Orçamento</a></li>
+             <li id="login"><a href="pagLogin.html" target="blank">Login</a></li>
+             <li>
+                 <body id="body1">
+                     <div id="toggle">
+                    <i class="indicator"></i>
+                     </div>
+                     <script>
+                         const body = document.querySelector('body1')
+                        const toggle = document.getElementById('toggle');
+                        toggle.onclick = function(){
+                            toggle.classList.toggle('active')
+                            body1.classList.toggle('active')
+                        }
+                     </script>
+                 </body>
+             </li>
+           </ul>
+       </header>
+      </div>
+    </center>
+  <div class="slider">
+      <ul>
+          <li><img src="caminha dog" alt="" id="imagens"></li>
+          <li><img src="espreguicadeiraexterna" alt="" id="imagens"></li>
+          <li><img src="sofavaranda" alt="" id="imagens"></li>
+      </ul>
+  </div>
+
+  
+     <center> <h2 class="titulo">Produtos</h2></center>
+   <div class="box">
+      <img class="produtosiniciais" src="sofa_braco"><br>
+     <span > Sofá Rio De Fibra Sintética Junco De </span><br>
+     <span> Dois Lugares Braço De 10cm</span>
+  </div>
+ 
+  <div class="box">
+       <img class="produtosiniciais" src="sf_fibra">
+       <span>Sofá De Fibra Sintética, Sofá De Fibra</span><br>
+       <span>Sintética, Com Duas Poltronas</span>
+  </div>
+ 
+  <div class="box">
+       <img class="produtosiniciais" src="sofa_vazado">
+       <span>Sofá De Fibra Sintética, Sofá De Fibra </span>
+         <br><span>Sintética, Com Duas Poltronas</span>
+  </div>
+ 
+  <div class="box">
+      <img class="produtosiniciais" src="sala_decorada">
+      <span>Sofá Rio De Fibra Sintética Junco De Dois</span>
+         <br><span>Lugares, Com Duas Poltronas e Mesa.</span>
+  </div>
+
+  <div class="box">
+      <img class="produtosiniciais" src="banqueta_imperial">
+      <span>Banqueta Imperial De Fibra Sintética</span>
+          <br><span>70cm De Altura.</span>
+  </div>
+
+  <div class="box">
+      <img class="produtosiniciais" src="ostra_boleada">
+      <span>Ostra Boleada De Fibra Sintética 1,80m De
+          <br><span>Diâmetro Com Almofadas Decorativas</span>
+  </div>
+
+  <div class="box">
+      <img class="produtosiniciais" src="espreguicadeira">
+      <span>Espreguiçadeira de fibra sintética junco</span>
+          <br><span>Dulce trama abstrata com estofado</span>
+  </div>
+
+  <div class="box">
+      <img class="produtosiniciais" src="mesaajunco">
+      <span>Cadeira De Área De Junco </span>
+      <br><span>Sintético (fibra) Alumínio</span>
+  </div>
+
+  <div class="box">
+      <img class="produtosiniciais" src="esprepiscina">
+      <span> Espreguiçadeiras Móveis De Junco</span>
+      <br><span>Sintético Para Piscina</span>
+  </div>
+
+  <div class="box">
+      <img class="produtosiniciais" src="conjuntohotel">
+      <span>Conjunto Hotel De Fibra Sintética</span>
+          <br><span>Com Mesa E Quatro Cadeiras</span>
+  </div>
+
+  <div class="box">
+      <img class="produtosiniciais" src="sofario">
+      <span>Sofá Rio Sul De Fibra Sintética</span>
+          <br><span>De Dois Lugares E Duas Poltronas.</span>
+  </div>
+
+  
+  <div class="box">
+      <img class="produtosiniciais" src="ostradubai">
+      <span>Ostra Dubai De Fibra Sintética Junco</span>
+  </div>
+ 
+  <br><br><br><br>
+  <footer>
+  <center> 
+  <br><br>
+  <button onclick="document.getElementById('myImage').src='poltronascolor'" class="colorir">Toque aqui para colorir</button><br><br><br>
+  <img id="myImage" src="poltronadontcolor.jpg" ><br><br>
+  <button onclick="document.getElementById('myImage').src='poltronadontcolor.jpg' " class="colorir">Toque aqui para ver a imagem original</button>
+  </center>
+ 
+  
+  <br><br><br><br>
+  <center><h3 class="titulo">Sobre:</h3>
+  <p class="pPrincipal">A Camp House - Mobílias é uma empresa que visa em construir móveis sob medidas para decorar sua casa do jeitinho que você quiser.
+      Buscamos atender os nossos clientes da melhor maneira possível para uma boa experiência com a empresa.
+      Camp foi fundada em 2000, por um Português chamado Francisco Rodrigues e desde então, sua criação acabou se ampliando de geração em geração, fazendo com que a mesma 
+      tenha uma boa avaliação tanto em suas belíssimas produções, quanto no atendimento oferecido ao cliente. </p>
+  </center></div>
+      <br>
+     <center> <h3 class="titulo">Acesse nossas redes socias:</h3>
+    <a href="https://www.facebook.com/yngrid.baeta"><img src="logo_fb.png" id="fb"></a> 
+    <a href="https://www.instagram.com/yngridbaeta/"><img src="logoinsta.jpg" id="insta"></a>
+    <a href="https://www.google.com/intl/pt-BR/gmail/about/"><img src="gmail-logo.png" id="gmail"></a>
+    </center>
+    <br><br>
+  </footer>
+ </div>
+ 
+</html>
+</body>

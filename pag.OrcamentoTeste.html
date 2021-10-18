@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Orçamento</title>
+    <style>
+         #cabecalho ul{ 
+     margin: 0;
+     background-color: rgba(110, 64, 64, 0.39);
+     list-style: none;
+    }
+
+     #cabecalho ul li{
+     display: inline;
+    }
+     #cabecalho ul li a{
+     color: white;
+     padding: 10px 30px;
+     display: inline-block;
+     text-decoration: none;
+     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    
+     #cabecalho ul li a:hover{
+     color: rgba(54, 35, 35, 0.322);
+    }
+
+        .looga{
+         width:40px;
+         height:40px;
+         margin: 0.5px;
+        }
+        h1{
+            font-family : 'Dancing Script', cursive;
+        }
+        *
+        {
+            text-align: center;
+        }
+        
+        #idade{
+            width: 45px;
+        }
+        #nome, #email{
+           width:210px; 
+        }
+        fieldset{
+            width: 400px;
+            margin-left: 450px;
+        }
+        #overflowTest {         
+         height: 100px;
+         overflow: scroll;
+         border: 1px solid #ccc;
+        }
+        body{
+            background: linear-gradient(rgba(139, 0, 0, 0.397),rgba(165, 42, 42, 0.226));    
+        }
+        fieldset{
+            background: rgb(247, 245, 236);
+        }
+    </style>
+     <script>
+        function ExibeDados(){
+            alert("Nome:"+document.querySelector("#nome").value);
+            alert("E-mail:"+document.querySelector("#email").value);
+            alert("Telefone: "+document.querySelector("#tel").value);
+            alert("Idade: "+document.querySelector("#idade").value);
+            alert("Mensagem: "+document.querySelector("#textArea").value);
+         }
+     </script>
+</head>
+
+
+<body>
+
+    <div>
+        <header id="cabecalho">
+           <ul>
+             <li><a href="Camp House.html" target="blank"><img src="logo camph.png"class="looga"></a></li>
+             <li id="inicial"><a href="Camp House.html" target="blank">Pagina Inicial</a></li>
+             <li id="produt"><a href="pagProdutos.html" target="blank">Produtos</a></li>
+             <li id="login"><a href="pagLogin.html" target="blank">Login</a></li>
+             <li>
+                     </script>
+                 </body>
+             </li>
+           </ul>
+       </header>
+      </div>
+
+    <center>
+    <h1>Faça seu orçamento!</h1></center>
+    <form>
+        <fieldset>
+        <legend>Orçamento</legend>
+        <label>Nome:</label>
+        <input id="nome" type="text" name="fname"><br><br>
+        <label>E-mail:</label>
+        <input id="email" type="email" name="email"><br><br>
+        <label>Telefone:</label>
+        <input id="tel" type="number" name="number"><br><br>
+        <label>Idade:</label>
+        <input id="idade" type="number" name="idade"><br><br>
+        <p>Digite sua mensagem:</p><br>
+        <textarea name="" id="textArea" rows="5" cols="45" value="{textarea}" placeholder="Digite aqui sua mensagem..."></textarea><br>
+        <input type="submit" onclick="ExibeDados()", value="Enviar">
+        <input type="submit" value="Limpar"
+        button type="button" id="limpar" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+       </fieldset>
+    </form>
+    <br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Orçamento</title>
+    <style>
+         #cabecalho ul{ 
+     margin: 0;
+     background-color: rgba(110, 64, 64, 0.39);
+     list-style: none;
+    }
+
+     #cabecalho ul li{
+     display: inline;
+    }
+     #cabecalho ul li a{
+     color: white;
+     padding: 10px 30px;
+     display: inline-block;
+     text-decoration: none;
+     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    
+     #cabecalho ul li a:hover{
+     color: rgba(54, 35, 35, 0.322);
+    }
+
+        .looga{
+         width:40px;
+         height:40px;
+         margin: 0.5px;
+        }
+        h1{
+            font-family : 'Dancing Script', cursive;
+        }
+        *
+        {
+            text-align: center;
+        }
+        
+        #idade{
+            width: 45px;
+        }
+        #nome, #email{
+           width:210px; 
+        }
+        fieldset{
+            width: 400px;
+            margin-left: 450px;
+        }
+        #overflowTest {         
+         height: 100px;
+         overflow: scroll;
+         border: 1px solid #ccc;
+        }
+        body{
+            background: linear-gradient(rgba(139, 0, 0, 0.397),rgba(165, 42, 42, 0.226));    
+        }
+        fieldset{
+            background: rgb(247, 245, 236);
+        }
+    </style>
+     <script>
+        function ExibeDados(){
+            alert("Nome:"+document.querySelector("#nome").value);
+            alert("E-mail:"+document.querySelector("#email").value);
+            alert("Telefone: "+document.querySelector("#tel").value);
+            alert("Idade: "+document.querySelector("#idade").value);
+            alert("Mensagem: "+document.querySelector("#textArea").value);
+         }
+     </script>
+</head>
+
+
+<body>
+
+    <div>
+        <header id="cabecalho">
+           <ul>
+             <li><a href="Camp House.html" target="blank"><img src="logo camph.png"class="looga"></a></li>
+             <li id="inicial"><a href="Camp House.html" target="blank">Pagina Inicial</a></li>
+             <li id="produt"><a href="pagProdutos.html" target="blank">Produtos</a></li>
+             <li id="login"><a href="pagLogin.html" target="blank">Login</a></li>
+             <li>
+                     </script>
+                 </body>
+             </li>
+           </ul>
+       </header>
+      </div>
+
+    <center>
+    <h1>Faça seu orçamento!</h1></center>
+    <form>
+        <fieldset>
+        <legend>Orçamento</legend>
+        <label>Nome:</label>
+        <input id="nome" type="text" name="fname"><br><br>
+        <label>E-mail:</label>
+        <input id="email" type="email" name="email"><br><br>
+        <label>Telefone:</label>
+        <input id="tel" type="number" name="number"><br><br>
+        <label>Idade:</label>
+        <input id="idade" type="number" name="idade"><br><br>
+        <p>Digite sua mensagem:</p><br>
+        <textarea name="" id="textArea" rows="5" cols="45" value="{textarea}" placeholder="Digite aqui sua mensagem..."></textarea><br>
+        <input type="submit" onclick="ExibeDados()", value="Enviar">
+        <input type="submit" value="Limpar"
+        button type="button" id="limpar" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+       </fieldset>
+    </form>
+    <br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <style>
+        * {
+             margin:0;
+             padding:0;
+             box-sizing: border-box;
+         }
+         body{
+             overflow: hidden;
+         }
+         #cabecalho ul{ 
+      margin: 0;
+      text-align: center;
+      list-style: none;
+     }
+ 
+      #cabecalho ul li{
+      display: inline;
+     }
+      #cabecalho ul li a{
+      color: rgb(10, 10, 10);
+      padding: 10px 30px;
+      text-decoration: none;
+     }
+ 
+     
+      #cabecalho ul li a:hover{
+      color: rgba(54, 35, 35, 0.322);
+     } 
+        section{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+           background: linear-gradient(to bottom, #f1f4f911, rgba(165, 42, 42, 0.534));
+ 
+         }
+         section .color{
+           position: absolute;
+           filter: blur(150px)
+         }
+         section .color:nth-child(1)
+         {
+             top: -350px;
+           width: 600px;
+           height: 600px;
+           background: #1b242786;
+         }
+         section .color:nth-child(2)
+         {
+           bottom: -150px;
+           left: 100px;
+           width: 500px;
+           height: 500px;
+           background: #fffd8757;
+         }
+         section .color:nth-child(2)
+         {
+           bottom: 50px;
+           right: 100px;
+           width: 300px;
+           height: 300px;
+           background: #989b9c5e;
+         }
+         .box{
+             position: relative;
+         }
+         .box .square
+         {
+             position: absolute;
+             backdrop-filter: blur(5px);
+             box-shadow: 0 25px 45px rgba(0, 0, 0, 0.075);
+             border: 1px solid rgba(255, 255, 255, 0.329);
+             border-right: 1px solid rgba(255, 255, 255, 0.267);
+             border-bottom: 1px solid rgba(187, 47, 117, 0.253);
+             background:rgba(255, 255, 255, 0.205);
+             border-radius: 10px;
+             animation: animate 10s linear infinite;
+             animation-delay: calc(-1s * var(--i)) ;
+         }
+         @keyframes animate {
+             0%,100%
+             {
+                 transform: translateY(-40px);
+             }
+             50%
+             {
+                 transform: translateY(40px);
+             }
+         }
+         .box .square:nth-child(1)
+         {
+             top: -50px;
+             right: -60px;
+             width:100px;
+             height:100px;
+         }
+         .box .square:nth-child(2)
+         {
+             top: 150px;
+             left: -100px;
+             width:120px;
+             height:120px;
+             z-index: 2;
+         }
+         .box .square:nth-child(3)
+         {
+             bottom: 50px;
+             right: -60px;
+             width:80px;
+             height:80px;
+             z-index: 2;
+         }
+         .box .square:nth-child(4)
+         {
+             bottom: -80px;
+             left: 100px;
+             width:50px;
+             height:50px;
+             
+         }
+         .box .square:nth-child(5)
+         {
+             top: -80px;
+             left: 140px;
+             width:60px;
+             height:60px;
+             
+         }
+         .container{
+             position: relative;
+             width: 400px;
+             min-height: 400px;
+             background: rgba(255, 255, 255, 0.1);
+             border-radius: 10px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             backdrop-filter: blur(5px);
+             box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+             border: 1px solid rgba(255,255,255,0.253);
+             border-right: 1px solid rgba(255, 255, 255, 0.267);
+             border-bottom: 1px solid rgba(209, 202, 207, 0.253);
+         }
+         .form{
+             position: relative;
+             width: 100% ;
+             height: 100%;
+             padding: 40px;
+         }
+         .form h2{
+             position: relative;
+             color: rgba(255, 255, 255, 0.979);
+             font-size: 24px;
+             font-weight: 600;
+             letter-spacing: 1px;
+             margin-bottom: 40px;
+         }
+         .form h2 :before{
+           content: '';
+           position: absolute;
+           left: 0;
+           bottom: -10px;
+           width: 80px;
+           height: 4px;
+           background: rgba(255, 255, 255, 0.397);
+         }
+         .form .intputBox
+         {
+             width: 100%;
+             margin-top: 20px;
+         }
+         .form .intputBox input
+         {
+             width: 100%;
+             background: rgba(255,255,255,0.2);
+             border: none;
+             outline: none;
+             padding: 10px 20px;
+             border-radius: 35px;
+             border: 1px solid rgba(255,255,255,0.5);
+             border-right: 1px solid rgba(255,255,255,0.5);
+             border-bottom: 1px solid rgba(255,255,255,0.5);
+             font-size: 16px;
+             letter-spacing: 1px;
+             color: rgb(255, 255, 255);
+             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+         }
+         .form .intputBox input ::placeholder{
+             color:rgb(255, 255, 255); 
+             color: #666;
+             max-width: 100px;
+             cursor: pointer;
+             margin-bottom: 20px;
+             font-weight: 600;
+         }
+         .forget
+         {
+             margin-top:5px ;
+             color: #fff;
+         }
+         .forget a
+         {
+             color: rgb(255, 255, 255);
+             font-weight:600 ;
+         }
+         
+         </style>
+    
+    <script>
+        function ExibeDados(){
+            alert("Nome:"+document.querySelector("#nome").value);
+            alert("E-mail:"+document.querySelector("#email").value);
+            alert("Telefone: "+document.querySelector("#tel").value);
+            alert("Idade: "+document.querySelector("#idade").value);
+            alert("Mensagem: "+document.querySelector("#textArea").value);
+         }
+     </script>
+</head>
+
+<body>
+
+
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="box">
+            <div class=square style="--i:0;"></div>
+            <div class=square style="--i:1;"></div>
+            <div class=square style="--i:2;"></div>
+            <div class=square style="--i:3;"></div>
+            <div class=square style="--i:4;"></div>
+            <div class="container">
+                <div class="form">
+                    <h2>Orçamento</h2>
+                    <form>
+                        <div class="intputBox">
+                        <input type="text" id="nome" placeholder="Nome"><br><br>
+                        <input type="email" id="email" placeholder="E-mail:"><br><br>
+                        <input type="number" id="tel" placeholder="Telefone:"><br><br>
+                        <input type="number" id="idade" placeholder="Idade"><br><br>
+                        <input type="textArea" id="textArea" placeholder="Digite sua mensagem:">
+                        </div>
+                        <div class="intputBox">
+                       
+                          <h4>  <input type="submit"  onclick="ExibeDados()">
+                         
+        
+              
+            </div>
+        </div>
+</body>
+</html>
